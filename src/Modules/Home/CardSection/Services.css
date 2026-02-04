@@ -1,0 +1,62 @@
+.service-card {
+  width: 300px;
+  padding: 45px 30px;
+  background: white;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 2px solid #000;
+}
+
+/* ICON */
+.icon {
+  width: 90px;
+  height: 90px;
+  background: purple;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  transition: all 0.4s ease;
+}
+
+.icon img {
+  width: 40px;
+  filter: brightness(0) invert(1);
+  transition: all 0.4s ease;
+}
+
+/* TEXT */
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color:purple;
+}
+.service-card:hover h3 {
+  color: white;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #666;
+}
+
+/*  FULL CARD HOVER */
+.service-card:hover {
+  background: purple;
+  color: white;
+  border-color: purple;
+}
+
+.service-card:hover p {
+  color: white;
+}
+
+.service-card:hover .icon {
+  background: white;
+}
+
+.service-card:hover .icon img {
+  filter: none;
+}

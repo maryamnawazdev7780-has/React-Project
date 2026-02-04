@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes fadeZoom {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeZoom {
+  animation: fadeZoom 0.8s ease-out forwards;
+}
+
+.animate-slideRight {
+  animation: slideRight 0.8s ease-out forwards;
+}
+.clip-diagonal {
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
